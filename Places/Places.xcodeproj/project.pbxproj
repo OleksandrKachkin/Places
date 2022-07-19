@@ -10,6 +10,9 @@
 		B039E6122885C4D700607FCA /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039E6112885C4D700607FCA /* GoogleDataProvider.swift */; };
 		B039E61D2885C80000607FCA /* CLLocationCoordinate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039E61B2885C80000607FCA /* CLLocationCoordinate+Extensions.swift */; };
 		B039E61E2885C80000607FCA /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039E61C2885C80000607FCA /* UIImageView+Extension.swift */; };
+		B0929C862886AF23001AC7E6 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0929C852886AF23001AC7E6 /* CustomTableViewCell.xib */; };
+		B0929C882886AF51001AC7E6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0929C872886AF51001AC7E6 /* CustomTableViewCell.swift */; };
+		B0929C8A2886B0AF001AC7E6 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0929C892886B0AF001AC7E6 /* PlacesViewController.swift */; };
 		B0BAB84B28771155006963EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAB84A28771155006963EC /* AppDelegate.swift */; };
 		B0BAB84D28771155006963EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAB84C28771155006963EC /* SceneDelegate.swift */; };
 		B0BAB84F28771155006963EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAB84E28771155006963EC /* MapViewController.swift */; };
@@ -31,6 +34,9 @@
 		B039E6112885C4D700607FCA /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		B039E61B2885C80000607FCA /* CLLocationCoordinate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate+Extensions.swift"; sourceTree = "<group>"; };
 		B039E61C2885C80000607FCA /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B0929C852886AF23001AC7E6 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		B0929C872886AF51001AC7E6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		B0929C892886B0AF001AC7E6 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		B0BAB84728771155006963EC /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BAB84A28771155006963EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BAB84C28771155006963EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				B0BAB84E28771155006963EC /* MapViewController.swift */,
+				B0929C892886B0AF001AC7E6 /* PlacesViewController.swift */,
+				B0929C872886AF51001AC7E6 /* CustomTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BAB85028771155006963EC /* Main.storyboard */,
+				B0929C852886AF23001AC7E6 /* CustomTableViewCell.xib */,
 				B0E1ABB7287EFBAF000A1C0F /* MarkerView.swift */,
 				B0E1ABB9287EFC18000A1C0F /* MarkerView.xib */,
 			);
@@ -229,6 +238,7 @@
 				B0E1ABBA287EFC18000A1C0F /* MarkerView.xib in Resources */,
 				B0BAB85728771157006963EC /* LaunchScreen.storyboard in Resources */,
 				B0BAB85428771157006963EC /* Assets.xcassets in Resources */,
+				B0929C862886AF23001AC7E6 /* CustomTableViewCell.xib in Resources */,
 				B0BAB85228771155006963EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +298,8 @@
 				B0E1ABB6287EFAD9000A1C0F /* PlaceMarker.swift in Sources */,
 				B039E61D2885C80000607FCA /* CLLocationCoordinate+Extensions.swift in Sources */,
 				B0E1ABB8287EFBAF000A1C0F /* MarkerView.swift in Sources */,
+				B0929C882886AF51001AC7E6 /* CustomTableViewCell.swift in Sources */,
+				B0929C8A2886B0AF001AC7E6 /* PlacesViewController.swift in Sources */,
 				B0BAB84B28771155006963EC /* AppDelegate.swift in Sources */,
 				B0EB217F28782B0C0046658C /* GooglePlace.swift in Sources */,
 				B0BAB84D28771155006963EC /* SceneDelegate.swift in Sources */,
