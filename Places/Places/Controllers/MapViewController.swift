@@ -47,6 +47,16 @@ extension MapViewController {
     
     mapView.delegate = self
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let navigation = segue.destination as? UINavigationController,
+          let controller = navigation.topViewController as? PlacesViewController
+    else {
+      return
+    }
+    controller.configureWithPlaces(places ?? [])
+  }
+  
 }
 
 // MARK: - Actions
@@ -68,6 +78,11 @@ extension MapViewController {
       places.forEach { place in
         let marker = PlaceMarker(place: place, availableTypes: self.searchedTypes)
         marker.map = self.mapView
+      }
+      
+      if let navigation = self.presentedViewController as? UINavigationController,
+         let controller = navigation.topViewController as? PlacesViewController {
+        controller.configureWithPlaces(places)
       }
     }
   }
