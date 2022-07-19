@@ -99,6 +99,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="85" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="prG-Xb-0Zf">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bwv-NG-nGs" id="lkz-bV-dQT"/>
+                                    <outlet property="delegate" destination="bwv-NG-nGs" id="Izs-vo-DTv"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Itp-tm-BuP"/>
@@ -111,8 +115,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Places" id="i6k-7f-mPo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oj0-uq-Q0X"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oj0-uq-Q0X">
+                            <connections>
+                                <action selector="doneButton:" destination="bwv-NG-nGs" id="V4h-yL-b06"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="prG-Xb-0Zf" id="abC-80-aI6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRJ-XT-KYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
