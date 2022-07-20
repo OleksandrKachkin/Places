@@ -20,7 +20,7 @@ class PlaceMarker: GMSMarker {
     appearAnimation = .pop
     
     var foundType = "restaurant"
-    let possibleTypes = availableTypes.count > 0 ? availableTypes : ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
+    let possibleTypes = availableTypes.count > 0 ? availableTypes : ["restaurant", "cafe"]
     for type in place.types {
       if possibleTypes.contains(type) {
         foundType = type

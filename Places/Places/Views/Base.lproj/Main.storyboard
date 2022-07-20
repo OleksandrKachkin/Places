@@ -117,7 +117,7 @@
                     <navigationItem key="navigationItem" title="Places" id="i6k-7f-mPo">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="Oj0-uq-Q0X">
                             <connections>
-                                <action selector="doneButton:" destination="bwv-NG-nGs" id="V4h-yL-b06"/>
+                                <action selector="doneButtonTapped:" destination="bwv-NG-nGs" id="rw0-5j-uzT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

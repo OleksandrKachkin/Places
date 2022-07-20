@@ -7,7 +7,7 @@ target 'Places' do
 
   # Pods for Places
 
-  pod 'GoogleMaps', '7.0.0'
-  pod 'GooglePlaces', '7.0.0'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end
