@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SkE-VE-cug" customClass="MarkerView" customModule="Places" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="134" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-kz-YkA">
+                    <rect key="frame" x="8" y="0.0" width="134" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Y4M-yh-X2U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="134" translatesAutoresizingMaskIntoConstraints="NO" id="td9-oU-AHy">
+                    <rect key="frame" x="0.0" y="38" width="150" height="68"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" systemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="y4n-pM-xFW"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WjX-kz-YkA" firstAttribute="top" secondItem="SkE-VE-cug" secondAttribute="top" id="3Sc-d6-wZE"/>
+                <constraint firstItem="WjX-kz-YkA" firstAttribute="leading" secondItem="SkE-VE-cug" secondAttribute="leading" constant="8" id="7Y1-63-f7T"/>
+                <constraint firstAttribute="trailing" secondItem="WjX-kz-YkA" secondAttribute="trailing" constant="8" id="D4S-Xk-xoM"/>
+                <constraint firstAttribute="trailing" secondItem="td9-oU-AHy" secondAttribute="trailing" id="FgY-lg-Aba"/>
+                <constraint firstItem="td9-oU-AHy" firstAttribute="leading" secondItem="SkE-VE-cug" secondAttribute="leading" id="Hlu-vR-x78"/>
+                <constraint firstItem="td9-oU-AHy" firstAttribute="top" secondItem="WjX-kz-YkA" secondAttribute="bottom" id="Jbg-cU-OAM"/>
+                <constraint firstAttribute="bottom" secondItem="td9-oU-AHy" secondAttribute="bottom" id="hJU-k7-P9n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="td9-oU-AHy" id="row-h5-r8g"/>
+                <outlet property="nameLabel" destination="WjX-kz-YkA" id="LAP-ew-7Ae"/>
+            </connections>
+            <point key="canvasLocation" x="-27.536231884057973" y="-340.17857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
